@@ -4,3 +4,7 @@ h3{
 form{
     padding-left: 20px;
 }
+button{
+    width: 100px;
+    border-radius: 20px;
+}

@@ -14,7 +14,7 @@ function App() {
     let grams = litres * 8 * 4.5
     let burning = weight/10
     let gramsLeft = grams - (burning*time)
-    let BAlevel = 0
+    let BAlevel = undefined
     if(gender==="male"){
       BAlevel = gramsLeft/(weight*0.7)
     }else{
@@ -53,7 +53,7 @@ function App() {
         <input type="radio" name="gender" value="female" onChange={e=>setGender(e.target.value)} /><label>Female</label>
       </div>
       <div>
-        <ouput>{result.toFixed(3)}</ouput>
+        <ouput>{result.toFixed(2)}</ouput>
       </div>
       <button>Calculate</button>
     </form>
